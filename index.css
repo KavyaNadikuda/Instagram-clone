@@ -1,0 +1,336 @@
+*{
+  
+font-family: 'Poppins', sans-serif;
+
+    background-color: black;
+    color:white;
+    margin:0;
+    padding:0px;
+    border:0px;
+}
+img{
+    cursor: pointer;
+}
+.logo{
+    width:100px;
+    height:40px;
+    cursor: pointer;
+}
+.message{
+    background-color: white;
+    width:30px;
+    height:30px;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+header{
+    /* display:none; */
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    align-items: center;
+}
+.Notification{
+     display:flex;
+     gap:20px;
+    text-align: center;
+    align-items: center;
+}
+.Notification img{
+    width:30px;
+    height:30px
+}
+.menu{
+    display:flex;
+    flex-direction: column;
+   text-align: center;
+    gap:20px;
+    position: fixed;
+    left:0;
+    bottom:0;
+   top:0px;
+    padding: 20px;
+    justify-content: space-between;
+    
+}
+.gap{
+    display:flex;
+    flex-direction: column;
+    gap:10px
+}
+.hidden{
+    display:flex;
+   
+    visibility: hidden;
+    flex-direction: column;
+    gap:10px;
+   
+    background-color: rgb(61, 56, 56);
+    cursor: pointer;
+    
+}
+.account{
+    display: flex;
+    align-items: center;
+    gap:20px
+}
+.stories::-webkit-scrollbar{
+    display: none;
+}
+.account  p{
+    font-size: 14px;
+}
+.account span{
+    color:#9da3a8;
+    font-size: 12px;
+}
+.Suggested{
+   color: #9da3a8;
+   font-size: 14px;
+}
+.list{
+   
+    display: flex;
+   list-style-type: none;
+   gap:5px
+   
+}
+.list li{
+   color:#9da3a8;
+   font-size: 10px;
+}
+.followers{
+   background-color: rgb(61, 56, 56);
+   display:flex;
+   gap:10px;
+}
+.body{
+    display:flex;
+    justify-content: space-evenly;
+    gap:150px;
+    
+    padding:20px;
+   
+   
+   
+}
+.right-nav{
+   position: absolute;
+   right:0px;
+   top:0px;
+   padding:20px;
+   
+}
+
+
+.follower > p{
+    background-color: rgb(77, 74, 74);;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+.left-nav{
+    display:flex;
+    
+}
+.down-arrow{
+    font-size: 30px;
+    padding-top:10px;
+    cursor: pointer;
+    position: absolute;
+}
+.profile-pic{
+    border-radius: 50%;
+    width:60px;
+    height:50px;
+  
+}
+.profile{
+    display:flex;
+    flex-direction: column;
+}
+.stories{
+    display:flex;
+    gap:20px;
+   padding:10px;
+    align-items: center;
+    justify-content:flex-start;
+    position: relative;
+    overflow-x: scroll;
+    padding-left:200px;
+}
+.profile > span{
+    font-size: 12px;;
+}
+.heading{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  margin:10px;
+  /* border:2px solid white; */
+}
+.inner{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap:10px;
+    font-size: 14px;
+}
+.posts{
+    width:315px;
+    /* height:300px; */
+    /* margin:20px; */
+  /* border:1px solid red; */
+}
+ 
+.profile-pic-1{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+.img{
+    width:315px;
+    height:300px
+}
+.info{
+    display: flex;
+    width:30px;
+    height:30px;
+    align-items: center;
+    gap:10px;
+   
+}
+.reaction{
+    display:flex;
+    justify-content: space-between;
+    /* border:2px solid pink; */
+    padding:0px 10px
+}
+
+.comment{
+    color:gray;
+    font-size: 12px;;
+}
+.likes{
+    font-size: 13px;;
+    padding:10px;
+}
+.post{
+   
+   margin-bottom:40px;
+   /* border:2px solid green; */
+    gap:20px;
+    /* padding:10px; */
+}
+.home{
+    border-radius: 50%;
+    width:30px;
+    height:30px;
+}
+.footer{
+    display: none !important;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    gap:20%;
+    align-items: center;
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+  
+}
+.more{
+    display:flex;
+    justify-content: flex-start;
+    gap:20px
+}
+.acc-switch  a{
+  text-decoration: none;
+  color:blue;
+}
+.acc-switch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px
+}
+/* .right{
+    /* border:1px solid red; 
+} */
+@media only screen and (max-width:950px) and (min-width:500px){
+  
+  .menu{
+    display:none !important
+  }
+   .right-nav{
+      display:none !important
+   }
+   .footer{
+    display:inline-flex !important;
+    justify-content: space-between;
+    align-items: center;
+   
+   gap:40px;
+   padding-right:10px;
+    
+   }
+   .stories{
+    padding-left:20px;
+   }
+  
+}
+@media only screen and (max-width:500px) and (min-width:200px){
+
+    .menu{
+        display:none !important
+      }
+       .right-nav{
+          display:none !important
+       }
+       .footer{
+        display:flex !important;
+        justify-content: center;
+        gap:30px;
+        align-items: center;
+    
+       
+        
+       }
+       .posts{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        padding:10px;
+       }
+       .right{
+        display: flex;
+       }
+       header{
+        display: flex;
+        justify-content: space-between;
+        
+        align-items: center;
+       }
+       .likes{
+         padding-left:20px;
+       }
+       .stories{
+        padding-left:15px;
+       }
+      
+    }
+    .dark_mode:focus body{
+           background-color: white;
+           color:black
+    }
+
